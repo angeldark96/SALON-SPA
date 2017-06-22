@@ -1,0 +1,55 @@
+.staff-container
+{
+@include desde($small)
+{
+  display: flex;
+  //Salta de linea
+  flex-wrap: wrap;
+  //Uno al lado del otro
+  justify-content: space-between;
+}
+}
+
+.staff-title {
+  text-align: center;
+  width: 100%;
+}
+
+.staff-member
+{
+  //width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba($black,.07);
+  margin-bottom: 1.5em;
+  text-align: center;
+  padding: 1em;
+  //agregamos los tamaños
+  @include desde($small) {
+    width: calc(50% - .5em);
+    margin: 0 0 1em;
+  }
+
+  @include desde($medium) {
+    width: calc(25% - 1em);
+    margin: 0 0 1em;
+  }
+
+  &__img
+  {
+    border-radius: 50%;
+    width: 50%;
+    border :3px solid $color2;
+  }
+  &__name
+  {
+    margin: 0;
+  }
+  &__button
+  {
+
+      font-size: .9em;
+
+
+  }
+}

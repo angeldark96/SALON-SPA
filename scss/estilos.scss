@@ -1,0 +1,62 @@
+//Paleta de Colores
+$color1:#514077;
+$color2:#924992;
+$color3:#ffad01;
+$black:#111;
+$white:#fff;
+
+// Fuentes
+  //oswald para titulos
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+$font-title: 'Oswald', sans-serif;
+
+  //lato para los textos
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+$font-text: 'Lato', sans-serif;
+
+//Ancho de las fuentes declaradas
+  $light:300;
+  $normal: 400;
+
+
+//Off Canvas para saber cuanto se va
+// a mover el menu
+
+$off-canvas-width:12em;
+
+// Layout
+
+$max-width:1200px;
+
+
+//mixin para media query
+
+@mixin desde($size)
+{
+  @media screen and (min-width: $size)
+  {
+    @content;
+  }
+}
+
+// breakpoints
+$small:480px;
+$medium:768px;
+$large:1025px;
+$x-large:1400px;
+
+
+
+//Importans tus archivos base
+@import "components/base";
+@import "components/header";
+@import "components/menu";
+@import "components/banner";
+@import "components/buttons";
+@import "components/services";
+@import "components/staff";
+@import "components/modules";
+@import "components/contact";
+@import "components/footer";
+
